@@ -37,3 +37,8 @@
 .book .addbtn {
   background-color: rgb(255, 204, 102);
 }
+
+.box {
+  display: flex;
+  flex-direction: row;
+}
