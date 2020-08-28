@@ -1,0 +1,44 @@
+h1 {
+    font-size: 50px;
+    color: rgb(255, 204, 102);
+}
+h2 {
+    font-size: 35;
+}
+.portfolio-media {
+    position: inline;
+}
+/* decendant combinator */
+section p {
+    text-decoration: underline;
+}
+/* Child Combinatoor*/
+section > p {
+    letter-spacing: 10px;
+}
+/* general sibling combinator */
+section ~ p {
+    word-spacing: 30px;
+}
+/* adjacent sibling combinator*/
+section + p {
+    font-variant: small-caps;
+}
+input[type=text], textarea {
+    border-radius: 4px; /*rounded borders*/
+    box-sizing: border-box; /* Make sure that things stay in place*/
+    margin: 6px 0px 16px 0px; /* top right bottom left margin*/
+    padding: 12px; /*some surrounding space*/
+    resize: vertical; /* Allow users to verticaly resize the textarea */
+    width: 750px; /* Full Width 100% */
+    }
+.box {
+    display: flex;
+     flex-direction: row;
+    }
+.grid-container {
+        display: grid;
+        grid-template-columns: [c1] 250px [c2] 250px [c3] 250px;
+        grid-template-rows: auto auto auto;
+
+    }
