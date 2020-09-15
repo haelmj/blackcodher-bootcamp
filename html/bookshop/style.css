@@ -12,29 +12,15 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... } */
-.container {
-    text-align: center;
+
+.bookshop {
+  text-align: center;
+  box-sizing: content-box;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
-.header h1,
-.header .breadcrumb {
-   text-align: center;
-}
-
-.book {
-       border-bottom: 1px solid rgb(255.204.102.);
-      }
-
-.book .addbtn,
-.searchBar input[type=submit] {
---padding: 8px 10px;
---border-radius: 5px;
---min-width: 80px;
---float: right;
---font-size: 1.1em;
-}
-
-.book .addbtn {
+.addbtn {
   background-color: rgb(255, 204, 102);
 }
 
@@ -43,9 +29,18 @@
   flex-direction: row;
 }
 
-.grid-container{
+.grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   align-content: center;
 }
+
+.bookCardDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+  border-color: black;
+  border-radius: 3pt;  
+}
+
