@@ -1,0 +1,9 @@
+body{
+    text-align: center;
+};
+
+#title{
+    color: #ffcc66;
+    text-shadow: #000000;
+    text-decoration: underline;
+};
