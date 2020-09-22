@@ -1,4 +1,5 @@
 :root {
+    background-image: url("/dott-pattern-coral.png");
     background-color: #ffcc66;
     font-size: 62.5%;
 }
@@ -17,8 +18,12 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 5.4rem;
-  color: #56a5eb;
+  color: #52575d;
   margin-bottom: 5rem;
+}
+
+#quizHome {
+  text-shadow: whitesmoke 2px 0 10px;
 }
 
 h1 > span {
@@ -81,11 +86,12 @@ h3 {
     padding: 1rem 0;
     width: 20rem;
     text-align: center;
-    border: 0.1rem solid #56a5eb;
+    border: 0.1rem solid #52575d;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: #56a5eb;
+    color: #52575d;
     background-color: white;
+    align-self: center;
   }
   
   .btn:hover {
