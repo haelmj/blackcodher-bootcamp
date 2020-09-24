@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffcc66;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.testHeader {
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
