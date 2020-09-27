@@ -1,44 +1,268 @@
-h1 {
-    font-size: 50px;
-    color: rgb(255, 204, 102);
+body, html {
+    height: 100%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-h2 {
-    font-size: 35;
-}
-.portfolio-media {
-    position: inline;
-}
-/* decendant combinator */
-section p {
-    text-decoration: underline;
-}
-/* Child Combinatoor*/
-section > p {
-    letter-spacing: 10px;
-}
-/* general sibling combinator */
-section ~ p {
-    word-spacing: 30px;
-}
-/* adjacent sibling combinator*/
-section + p {
-    font-variant: small-caps;
-}
-input[type=text], textarea {
-    border-radius: 4px; /*rounded borders*/
-    box-sizing: border-box; /* Make sure that things stay in place*/
-    margin: 6px 0px 16px 0px; /* top right bottom left margin*/
-    padding: 12px; /*some surrounding space*/
-    resize: vertical; /* Allow users to verticaly resize the textarea */
-    width: 750px; /* Full Width 100% */
-    }
-.box {
-    display: flex;
-     flex-direction: row;
-    }
-.grid-container {
-        display: grid;
-        grid-template-columns: [c1] 250px [c2] 250px [c3] 250px;
-        grid-template-rows: auto auto auto;
+/* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/html/portfolio/media/hero-image-1.jpg");
+  
+    /* Set a specific height */
+    height: 50%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
 
-    }
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  .paragraph {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+      width: 78%;
+      align-self: center;
+      font-size: 1em;
+  }
+.imgContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-content: center;
+}
+
+h1 {
+    font-size: 3.4em;
+}
+
+h2 {
+    font-size: 2.4em;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+.links, button {
+    font-size: 1.2em;
+    background-color: #ffcc66;
+    margin: 1em 1em 1em 1em;
+    color: black;
+}
+
+ul {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+li {
+    text-align: justify;
+    list-style-position: inside;
+}
+
+  /* Star of slideshow css */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container, .container2 {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides, .mySlides2 {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor, .cursor2 {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next, .prev2,
+  .next2 {
+    cursor: pointer;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: black;
+
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover, .prev2:hover,
+  .next2:hover{
+    background-color: #ffcc66;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext, .numbertext2{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container, .caption2-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+    width: 78%;
+
+  }
+  
+  .row:after, .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .row, .row2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      margin-left: auto;
+      margin-right: auto;
+      align-self: center;
+      width: 78%;
+  }
+  
+  /* Six columns side by side */
+  .column, .column2 {
+    float: left;
+    width: 100%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo, .demo2 {
+    opacity: 0.6;
+  }
+  
+  .active, .demo:hover,
+  .active2, .demo2:hover {
+    opacity: 1;
+  }
+  /* End of slideshow css */
+
+#socials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+}
+
+  section #bigDreamsSocials,
+  section #affirmedSocials {
+    text-align: center;
+    transform: translateZ(0);
+  }
+  section #bigDreamsSocials h2,
+  section #affirmedSocials h2 {
+    margin: 40px 0px 40px;
+    color: #000000;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  section #bigDreamsSocials li,
+  section #affirmedSocials li {
+    width: 120px;
+    height: 140px;
+    display: inline-block;
+    margin: 20px;
+    list-style: none;
+  }
+  section #bigDreamsSocials li div,
+  section #affirmedSocials li div {
+    width: 120px;
+    height: 120px;
+    color: #000000;
+    font-size: 3.4em;
+    text-align: center;
+    line-height: 120px;
+    background-color: #ffcc66;
+    transition: all 0.5s ease;
+  }
+  section #bigDreamsSocials li a,
+  section #affirmedSocials li a {
+    color: #000;
+    border: none;
+  }
+  section #bigDreamsSocials li div:hover,
+  section #affirmedSocials li div:hover {
+    transform: rotate(360deg);
+    border-radius: 100px;
+  }
+  section #bigDreamsSocials li span,
+  section #affirmedSocials li span {
+    width: 120px;
+    height: 20px;
+    display: block;
+    padding: 15px 0px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-align: center;
+  }
+

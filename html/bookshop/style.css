@@ -13,6 +13,7 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... } */
 
+
 .bookshop {
   text-align: center;
   box-sizing: content-box;
@@ -20,8 +21,18 @@
   margin-right: 2%;
 }
 
+.homeButton {
+  margin-top: 1rem;
+  background-color: #ffcc66;
+}
+
+.homeButtonText {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
 .addbtn {
-  background-color: rgb(255, 204, 102);
+  background-color: #ffcc66;
 }
 
 .box {
@@ -44,3 +55,43 @@
   border-radius: 3pt;  
 }
 
+.cardDiv {
+  border-color: #ffcc66;
+  border-style: solid;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.amazonBookTitleDiv, .authorDiv {
+  height: 4rem;
+}
+
+.bookTitle {
+  text-decoration: underline;
+  text-decoration-color: #ffcc66;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.author {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.descriptionDiv {
+  height: 6rem;
+  border-style: solid;
+  border-width: thin;
+  border-color: #ffcc66;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price{
+  font-weight: bold;
+}
